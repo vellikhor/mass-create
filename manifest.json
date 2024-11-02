@@ -1,0 +1,10 @@
+{
+	"id": "mass-create",
+	"name": "Mass Create",
+	"version": "1.0.0",
+	"minAppVersion": "1.7.4",
+	"description": "Create large quantities of notes easily at one time.",
+	"author": "vellikhor",
+	"authorUrl": "https://github.com/vellikhor",
+	"isDesktopOnly": false
+}
