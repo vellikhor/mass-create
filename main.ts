@@ -1,5 +1,5 @@
 import { Notice, Plugin, TFolder } from "obsidian";
-import { CreationModal } from "modal/CreationModal";
+import { CreationModal } from "./modal/CreationModal";
 
 // Remember to rename these classes and interfaces!
 
