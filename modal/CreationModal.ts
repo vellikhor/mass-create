@@ -57,8 +57,8 @@ export class CreationModal extends Modal {
 					.setValue(this.isFolderCreating)
 					.onChange((isFolderCreating) => {
 						this.isFolderCreating = isFolderCreating;
-						this.display();
 						this.folderName = "";
+						this.display();
 					});
 			})
 			.setName("Create Folder")
