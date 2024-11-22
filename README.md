@@ -1,5 +1,4 @@
 # Mass Create Plugin for Obsidian
-___
 
 ## Overview
 
@@ -31,6 +30,8 @@ The Mass Create plugin for [Obsidian](https://obsidian.md/) allows users to crea
    - Enter the names of the files you'd like to create.
 1. **Template Selection** (optional): If you’d like to use an existing file as a template, choose the template file, and its content will be duplicated in each new file.
 2. **Finish**: Confirm your selection, and the plugin will create the files and folders accordingly.
+
+![](https://github.com/vellikhor/mass-create/assets/mass-create-runthrough.gif)
 
 ## License
 
