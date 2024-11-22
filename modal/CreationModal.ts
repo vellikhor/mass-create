@@ -45,6 +45,7 @@ export class CreationModal extends Modal {
 		new Setting(contentEl)
 			.addText((text) =>
 				text
+					.setValue(this.folderName)
 					.setPlaceholder("Folder Name")
 					.setDisabled(!this.isFolderCreating)
 					.onChange((folderName) => {
@@ -57,6 +58,7 @@ export class CreationModal extends Modal {
 					.onChange((isFolderCreating) => {
 						this.isFolderCreating = isFolderCreating;
 						this.display();
+						this.folderName = "";
 					});
 			})
 			.setName("Create Folder")
@@ -67,6 +69,7 @@ export class CreationModal extends Modal {
 		new Setting(contentEl)
 			.addTextArea((text) => {
 				const t = text
+					.setValue(this.textAreaNames)
 					.setPlaceholder("Note Names")
 					.onChange((value) => {
 						this.textAreaNames = value;
@@ -83,6 +86,7 @@ export class CreationModal extends Modal {
 			cb.setValue(this.usingTemplate).onChange((usingTemplate) => {
 				this.usingTemplate = usingTemplate;
 				this.display();
+				this.templatePath = "";
 			});
 		});
 	}
@@ -94,7 +98,8 @@ export class CreationModal extends Modal {
 			.addText((text) => {
 				text.setPlaceholder("Path/Note.md").onChange((templatePath) => {
 					this.templatePath = templatePath;
-				});
+				})
+				.setValue(this.templatePath);
 			});
 	}
 
