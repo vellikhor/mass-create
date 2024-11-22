@@ -1,4 +1,4 @@
-import { Notice, Plugin, TFolder } from "obsidian";
+import { Plugin, TFolder } from "obsidian";
 import { CreationModal } from "./modal/CreationModal";
 
 // Remember to rename these classes and interfaces!
@@ -22,7 +22,6 @@ export default class MassCreatePlugin extends Plugin {
 						item.setTitle("Mass Create Notes")
 							.setIcon("plus")
 							.onClick(async () => {
-								new Notice(folder.path);
 								this.folderPath = folder.path;
 								new CreationModal(
 									this.app,

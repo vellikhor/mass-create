@@ -140,6 +140,5 @@ export class CreationModal extends Modal {
 			output += "Notes Have Been Created";
 		}
 		new Notice(output);
-		new Notice(this.templatePath);
 	}
 }
