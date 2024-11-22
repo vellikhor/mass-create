@@ -38,7 +38,7 @@ export class CreationModal extends Modal {
 	}
 
 	add_create_title(contentEl: HTMLElement): void {
-		contentEl.createEl("h1", { text: "Bulk Create Notes" });
+		contentEl.createEl("h1", { text: "Mass Create Notes" });
 	}
 
 	add_create_folder(contentEl: HTMLElement): void {
