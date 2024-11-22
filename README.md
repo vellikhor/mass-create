@@ -13,8 +13,9 @@ The Mass Create plugin for [Obsidian](https://obsidian.md/) allows users to crea
 ## Installation
 
 1. **Manual Installation**:
+   - Create a folder titled `mass-create` within the `.obsidian/plugins` folder of your Obsidian vault.
    - Download the plugin files.
-   - Place them in the `.obsidian/plugins/mass-create` folder of your Obsidian vault.
+   - Place them in the `mass-create` folder.
    - Go to Settings > Community plugins in Obsidian and enable the "Mass Create" plugin.
 
 2. **Community Plugin Directory** (when available):
