@@ -1,6 +1,7 @@
 import { App, normalizePath, TFile } from "obsidian";
 
 export class NewNotes {
+
 	async createBulkNotes(
 		note: string,
 		path: string,
