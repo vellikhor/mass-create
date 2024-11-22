@@ -38,7 +38,7 @@ export class CreationModal extends Modal {
 	}
 
 	add_create_title(contentEl: HTMLElement): void {
-		contentEl.createEl("h1", { text: "Mass Create Notes" });
+		contentEl.createEl("h1", { text: "Mass create notes" });
 	}
 
 	add_create_folder(contentEl: HTMLElement): void {
@@ -46,7 +46,7 @@ export class CreationModal extends Modal {
 			.addText((text) =>
 				text
 					.setValue(this.folderName)
-					.setPlaceholder("Folder Name")
+					.setPlaceholder("Folder name")
 					.setDisabled(!this.isFolderCreating)
 					.onChange((folderName) => {
 						this.folderName = folderName;
@@ -61,8 +61,8 @@ export class CreationModal extends Modal {
 						this.display();
 					});
 			})
-			.setName("Create Folder")
-			.setDesc("Creates Optional Folder For Files");
+			.setName("Create folder")
+			.setDesc("Creates optional folder for files.");
 	}
 
 	add_add_note_names(contentEl: HTMLElement) {
@@ -70,19 +70,19 @@ export class CreationModal extends Modal {
 			.addTextArea((text) => {
 				const t = text
 					.setValue(this.textAreaNames)
-					.setPlaceholder("Note Names")
+					.setPlaceholder("Note names")
 					.onChange((value) => {
 						this.textAreaNames = value;
 					});
 				t.inputEl.setAttr("rows", 13);
 				t.inputEl.setAttr("cols", 65);
 			})
-			.setName("Note Names")
-			.setDesc("List Each Note On Its Own Line");
+			.setName("Note names")
+			.setDesc("List each note on its own line.");
 	}
 
 	add_use_template(contentEl: HTMLElement) {
-		new Setting(contentEl).setName("Use Template?").addToggle((cb) => {
+		new Setting(contentEl).setName("Use template?").addToggle((cb) => {
 			cb.setValue(this.usingTemplate).onChange((usingTemplate) => {
 				this.usingTemplate = usingTemplate;
 				this.display();
@@ -93,8 +93,8 @@ export class CreationModal extends Modal {
 
 	add_template_path(contentEl: HTMLElement): void {
 		new Setting(contentEl)
-			.setName("Template Path:")
-			.setDesc("Path From Template Folder")
+			.setName("Template path:")
+			.setDesc("Path from template folder.")
 			.addText((text) => {
 				text.setPlaceholder("Path/Note.md").onChange((templatePath) => {
 					this.templatePath = templatePath;
@@ -140,9 +140,9 @@ export class CreationModal extends Modal {
 		}
 		if (annNames.length > 5) {
 			output +=
-				"And " + (annNames.length - 5) + " More Have Been Created";
+				"and " + (annNames.length - 5) + " more have been created.";
 		} else {
-			output += "Notes Have Been Created";
+			output += "notes have been created.";
 		}
 		new Notice(output);
 	}
