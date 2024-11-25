@@ -113,19 +113,37 @@ export class CreationModal extends Modal {
 					const notesList: string[] = this.textAreaNames.split("\n");
 					for (let i = 0; i < notesList.length; i++) {
 						if (this.usingTemplate) {
-							new NewNotes().createBulkNotes(
-								notesList[i],
-								this.path + "/" + this.folderName,
-								this.app,
-								this.templatePath
-							);
+							if(this.isFolderCreating){
+								new NewNotes().createBulkNotes(
+									notesList[i],
+									this.path + "/" + this.folderName,
+									this.app,
+									this.templatePath
+								);
+							} else {
+								new NewNotes().createBulkNotes(
+									notesList[i],
+									this.path,
+									this.app,
+									this.templatePath
+								);
+							}
 						} else {
-							new NewNotes().createBulkNotes(
-								notesList[i],
-								this.path + "/" + this.folderName,
-								this.app,
-								""
-							);
+							if(this.isFolderCreating){
+								new NewNotes().createBulkNotes(
+									notesList[i],
+									this.path + "/" + this.folderName,
+									this.app,
+									""
+								);
+							}else{
+								new NewNotes().createBulkNotes(
+									notesList[i],
+									this.path,
+									this.app,
+									""
+								);
+							}
 						}
 					}
 				});
