@@ -28,8 +28,10 @@ The Mass Create plugin for [Obsidian](https://obsidian.md/) allows users to crea
 3. **Configure File and Folder Names**:
    - Create any additional folders you would like the files to go within. (optional)
    - Enter the names of the files you'd like to create.
-1. **Template Selection** (optional): If you’d like to use an existing file as a template, choose the template file, and its content will be duplicated in each new file.
-2. **Finish**: Confirm your selection, and the plugin will create the files and folders accordingly.
+4. **Template Selection** (optional): If you’d like to use an existing file as a template, choose the template file, and its content will be duplicated in each new file.
+5. **Finish**: Confirm your selection, and the plugin will create the files and folders accordingly.
+
+You can also run Mass Create from the command menu, with your starting path as the main folder of your vault.
 
 ![](https://github.com/vellikhor/mass-create/blob/master/assets/mass-create-runthrough.gif)
 
