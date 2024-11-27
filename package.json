@@ -1,6 +1,6 @@
 {
 	"name": "mass-create",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "Create large quantities of notes easily at one time.",
 	"main": "main.js",
 	"scripts": {
