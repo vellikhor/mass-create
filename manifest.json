@@ -1,7 +1,7 @@
 {
 	"id": "mass-create",
 	"name": "Mass Create",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"minAppVersion": "1.7.4",
 	"description": "Create large quantities of notes easily at one time.",
 	"author": "vellikhor",
