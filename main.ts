@@ -1,5 +1,6 @@
 import { Plugin, TFolder } from "obsidian";
 import { CreationModal } from "./modal/CreationModal";
+import { Detector } from "processing/Detector";
 
 // Remember to rename these classes and interfaces!
 
@@ -11,7 +12,7 @@ export default class MassCreatePlugin extends Plugin {
 			id: "display-creation-modal",
 			name: "Note creator",
 			callback: () => {
-				new CreationModal(this.app, "").open();
+				new CreationModal(this.app, new Detector().getActiveFolder(this.app)).open();
 			},
 		});
 
